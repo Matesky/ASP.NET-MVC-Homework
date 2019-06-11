@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - ToDo</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("HomePage", "Index", "HomePage")</li>
+                <li>@Html.ActionLink("Create Task", "CreateTask", "User")</li>
+                <li>@Html.ActionLink("Stats", "Stats", "User")</li>
+                <li>@Html.ActionLink("NotFinished", "NotFinished", "User")</li>
+                <li>@Html.ActionLink("In Progress", "InProgress", "User")</li>
+                <li>@Html.ActionLink("Finished", "Finished", "User")</li>
+            </ul>
+        </nav>
+    </header>
+
+    @RenderBody()
+
+    <footer>
+        <p>Contact Us At:support.todo@gmail.com</p>
+    </footer>
+    <script src="~/js/site.js"></script>
+
+</body>
+</html>
